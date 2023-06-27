@@ -1,0 +1,32 @@
+@import "vars";
+@import "fonts";
+@import "mixin";
+@import "nullstyle";
+@import "header";
+@import "footer";
+@import "icons";
+@import "main";
+@import 'slider';
+@import '../../node_modules/swiper/swiper';
+
+
+body {
+    font-family: Roboto;
+    font-size: 16px;
+    max-width: 1440px;
+    margin: 0 auto;
+   
+}
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+   // overflow: hidden;
+}
+[class*="__container"] {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 100%;
+}
