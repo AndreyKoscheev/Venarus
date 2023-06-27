@@ -492,14 +492,29 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   align-self: center;
 }
+.slider-block .swiper-slide-shadow-left,
+.slider-block .swiper-slide-shadow-right {
+  display: none !important;
+}
+.slider-block .swiper-wrapper {
+  width: 790px;
+  height: 320px;
+}
 .slider-block .swiper-slide {
   width: 374px !important;
+  position: absolute;
+  top: 0;
 }
 .slider-block .swiper-slide-active {
   transform: translateY(25%) !important;
-  position: absolute;
   z-index: 4;
   left: 25%;
+}
+.slider-block .swiper-slide-pref {
+  left: 0;
+}
+.slider-block .swiper-slide-next {
+  right: 0;
 }
 .slider-block .swiper-slide-prev, .slider-block .swiper-slide-next {
   transform: scale(1.1) translate3d(25%, 0px, -155px) rotateX(0deg) rotateY(2.9898deg) !important;

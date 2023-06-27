@@ -18,24 +18,36 @@
     }
     .swiper-slide-shadow-left,
   .swiper-slide-shadow-right {
-    //display: none !important;
+    display: none !important;
   }
 
 
     .swiper-container {
         }
         .swiper-wrapper {
+         width: 790px;
+         height: 320px;
+        
          
+      
         }
         .swiper-slide {
           width: 374px !important;
-        
+          position: absolute;
+          top: 0;
            
         &-active {
             transform: translateY(25%) !important;
-            position: absolute;
-            z-index: 4;
-            left: 25%;
+            // position: absolute;
+             z-index: 4;
+             left: 25%;
+           
+        }
+        &-pref {
+          left: 0;
+        }
+        &-next {
+          right: 0;
         }
         &-prev,
         &-next {

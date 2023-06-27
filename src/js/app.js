@@ -21,6 +21,7 @@ if (close) {
 import Swiper   from 'swiper/bundle';
 const swiper = new Swiper('.swiper', {
     slidesPerView: 3,
+    initialSlide: 1,
     grabCursor: true,
     spaceBetween: 28,
     allowTouchMove: true,
@@ -32,10 +33,9 @@ const swiper = new Swiper('.swiper', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    effect: 'coverflow',
-    coverflowEffect: {
-     rotate: 50,
-        slideShadows: false,
+    effect: 'creative',
+    creativeEffect: {
+        limitProgress: 2,
   },
    
    
