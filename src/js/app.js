@@ -20,23 +20,22 @@ if (close) {
 }
 import Swiper   from 'swiper/bundle';
 const swiper = new Swiper('.swiper', {
-    slidesPerView: 3,
+    slidesPerView: 1,
     initialSlide: 1,
     grabCursor: true,
-    spaceBetween: 28,
-    allowTouchMove: true,
+    // spaceBetween: 28,
+    // allowTouchMove: true,
     loop: true,
-    centeredSlides: true,
-    slideToClickedSlide: true,
-    autoplay: false,
+    // slideToClickedSlide: true,
+    // autoplay: false,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    effect: 'creative',
-    creativeEffect: {
-        limitProgress: 2,
-  },
+//     effect: 'creative',
+//     creativeEffect: {
+//         limitProgress: 2,
+//   },
    
    
   });

@@ -3,7 +3,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 32px;
-    //overflow: hidden;
+    overflow: hidden;
     &__btn {
         padding: 0px 80px;
         border-radius: 32px;
@@ -24,35 +24,46 @@
 
     .swiper-container {
         }
+        .swiper{
+            // width: 790px;
+            width: 374px;
+            overflow: visible;
+            
+        }
         .swiper-wrapper {
-         width: 790px;
-         height: 320px;
-        
-         
-      
+            height: 310px;
         }
         .swiper-slide {
-          width: 374px !important;
-          position: absolute;
-          top: 0;
+        //   width: 374px !important;
+          height: 310px;
+        //   position: absolute;
+        //   top: 0;
+          transition: all 0.3s;
+        transform: translateX(-250%) !important;
            
         &-active {
-            transform: translateY(25%) !important;
+            transform: translate(0, 25%) !important;
             // position: absolute;
              z-index: 4;
-             left: 25%;
+            //  left: 25%;
            
         }
-        &-pref {
-          left: 0;
+        &-prev {
+        //   left: 0;
+            transform: translateX(50%) !important
         }
         &-next {
-          right: 0;
+        //   right: 0;
+            transform: translateX(-50%) !important
+            
+        }
+        &-next:first-child{
+            transform: translateX(250%) !important
         }
         &-prev,
         &-next {
-            transform: scale(1.1) translate3d(25% , 0px, -155px) rotateX(0deg)
-            rotateY(2.9898deg) !important;
+            // transform: scale(1.1) translate3d(25% , 0px, -155px) rotateX(0deg)
+            // rotateY(2.9898deg) !important;
         }
         }
         .slide-image {
