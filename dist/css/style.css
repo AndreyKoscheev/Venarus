@@ -281,16 +281,8 @@ h6 {
   display: block;
 }
 
-.icon-chevronLeft:before {
-  content: "\e900";
-}
-
-.icon-chevronRight:before {
-  content: "\e901";
-}
-
 .icon-cross:before {
-  content: "\e902";
+  content: "\e900";
 }
 
 .no-webp .main-section{
@@ -335,6 +327,7 @@ h6 {
   gap: 30px;
   align-items: center;
   border: 1px solid transparent;
+  transition: all 0.5s ease 0s;
 }
 
 .info-block__item:hover {
