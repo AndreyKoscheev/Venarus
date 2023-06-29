@@ -21,32 +21,21 @@ if (close) {
 import Swiper   from 'swiper/bundle';
 const swiper = new Swiper('.swiper', {
     slidesPerView: 1,
-    allowTouchMove: true,
-    loop: true,
-   
-    //centeredSlides: true,
-    slideToClickedSlide: true,
-    //effect: "coverflow",
+    initialSlide: 1,
     grabCursor: true,
-    autoplay: false,
-    
+    // spaceBetween: 28,
+    // allowTouchMove: true,
+    loop: true,
+    // slideToClickedSlide: true,
+    // autoplay: false,
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
-    // coverflow: {
-    //     rotate: 0,
-    //     stretch: 100,
-    //     depth: 200,
-    //     modifier: 1,
-    //     slideShadows: false
-    // },
-    breakpoints: {
-        // when window width is <= 768px
-        767: {
-            slidesPerView: 1,
-            centeredSlides: false,
-            effect: "slide",
-        }
-    }
+//     effect: 'creative',
+//     creativeEffect: {
+//         limitProgress: 2,
+//   },
+   
+   
   });

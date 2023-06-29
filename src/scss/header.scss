@@ -61,6 +61,15 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: all 0.5s ease 0s;
+        border: 1px solid transparent;
+        @media (any-hover: hover) {
+          &:hover {
+            background-color: transparent;
+            color: #620F5F;
+            border: 1px solid #620F5F;
+          }
+        }
         @media (max-width: 767.98px) {
             position: relative;
             z-index: 5;
