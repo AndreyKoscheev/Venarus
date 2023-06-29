@@ -10,8 +10,8 @@
 		&__body {
 			display: grid;
 			grid-template-columns: 31.5% 68.5%;
-			gap: 20px;
-			
+			//gap: 20px;
+			position: relative;
 			
 			@media (max-width: 767.98px) {
 				grid-template-columns: 1fr;
