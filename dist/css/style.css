@@ -942,6 +942,7 @@ main {
 
   .slider-block .swiper {
     width: 374px;
+    margin: 0 !important;
   }
 
   .slider-block .slide-image_small {

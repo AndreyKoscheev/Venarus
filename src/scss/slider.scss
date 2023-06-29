@@ -37,6 +37,7 @@
         }
         @media (max-width: 425px) {
             @include adaptiv (width, 374, 320, 1);
+            margin: 0 !important;
         }
     }
     .swiper-slide {
