@@ -54,53 +54,42 @@
                                 </a>
                             </div>
                         </div>
-                       <div class="main-section__col">
-                            <div class="slider-block">
-                                <div class="swiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-            
-                                            <div class=" slide-image"> 
-                                                <img src="@img/venarus_900-100 2.png" alt="">
-                                            </div>
-            
-                                        </div>
-                                        <div class="swiper-slide">
-            
-                                            <div class=" slide-image slide-image_small"> 
-                                                <img src="@img/ВЕНАРУС_50+450_№30 1.png" alt="">
-                                            </div>
-                                            
-            
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class=" slide-image"> 
-                                                <img src="@img/venarus_900-100 1.png" alt="">
-                                            </div>
-                                            
-            
-                                        </div>
-                                    </div>
-                                    <div class="swiper-navigation">
-                                        <button type="button" class="swiper-button-prev">
-                                      
-                                                <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="33.9998" cy="33.9999" r="33.4999" transform="rotate(-180 33.9998 33.9999)" stroke="white"/>
-                                                    <path d="M38.0796 20.3997L24.4796 33.9997L38.0796 47.5996" stroke="white"/>
-                                                    </svg>
-                                                    
-                                        </button>
-                                        <button type="button" class="swiper-button-next">
-                                            <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="34.0002" cy="34" r="33.5" stroke="white"/>
-                                                <path d="M29.9202 47.5999L43.5202 33.9999L29.9202 20.3999" stroke="white"/>
-                                                </svg>
-                                        </button>
+                        <div class="main-section__col">
+                            <div class="slider-block swiper">
+                                <div class="swiper-wrapper">                                   
+                                    <div class=" slide-image slide-image_medium swiper-slide">
+                                        <img src="@img/venarus_900-100 2.png" alt="">
+                                    </div>                                                                
+                                    <div class="swiper-slide slide-image slide-image_small">
+                                        <img src="@img/ВЕНАРУС_50+450_№30 1.png" alt="">
+                                    </div>                                                          
+                                    <div class="swiper-slide slide-image_big slide-image">
+                                        <img src="@img/venarus_900-100 1.png" alt="">
                                     </div>
                                 </div>
+                                <div class="swiper-navigation">
+                                    <button type="button" class="swiper-button-prev">
+
+                                        <svg width="68" height="68" viewBox="0 0 68 68" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="33.9998" cy="33.9999" r="33.4999"
+                                                transform="rotate(-180 33.9998 33.9999)" stroke="white" />
+                                            <path d="M38.0796 20.3997L24.4796 33.9997L38.0796 47.5996" stroke="white" />
+                                        </svg>
+
+                                    </button>
+                                    <button type="button" class="swiper-button-next">
+                                        <svg width="68" height="68" viewBox="0 0 68 68" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="34.0002" cy="34" r="33.5" stroke="white" />
+                                            <path d="M29.9202 47.5999L43.5202 33.9999L29.9202 20.3999" stroke="white" />
+                                        </svg>
+                                    </button>
+                                </div>
+
                                 <a href="#" class="slider-block__btn">Где купить ></a>
                             </div>
-                       </div>
+                        </div>
                     </div>
                 </div>
                 <div class="disclaimer">
@@ -109,11 +98,16 @@
                             или получить консультацию специалиста<span class="icon-cross"></span></div>
                     </div>
                 </div>
+                
+             <div class="main-section__decor"  >   
+                <img  src="@img/Vector 1.png" alt="">
+            </div>             
             </section>
         </main>
         @@include('html/footer.html',{})
-       
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/js/swiper.min.js"></script>
         <script src="js/app.min.js"></script>
+      
     </div>
 </body>
 

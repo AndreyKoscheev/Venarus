@@ -3,36 +3,50 @@
 	display: flex;
 	position: relative;
 	padding-top: 30px;
-	background: url('@img/background.jpg') 0px 132px / contain no-repeat;
-	
-
-	@media (max-width: 767.98px) {
-		background: url('@img/background-mobile.png') 0px 140px / contain no-repeat;
-	
-	}
 
 	@media (min-width: 767.98px) {
 		@include adaptiv (padding-top, 137, 60, 1);
 	}
-
-	&__container {}
-
+	&__decor {
+		position: absolute;
+		width: 100%;
+		height: auto;
+		top: 132px;
+		left: 0;
+		right: 0;
+		z-index: -1;
+		img {
+			max-width: 100%;
+			width: 100%;
+			height: 769px;
+			@media (max-width: 1024px) {
+				height: 469px;
+			}
+			@media (max-width: 768px) {
+				height: 242px;
+			}
+		}
+		
+		
+	}	
 	&__body {
-		display: grid;
-		grid-template-columns: 31.5% 1fr;
+		display: flex;
 		position: relative;
-
-		@media (max-width: 1024.98px) {
-			grid-template-columns: 1fr;
+		@media (max-width: 1024px) {
+			flex-direction: column;
 		}
 	}
 
 	&__col {
 		&:last-child {
-			@include adaptiv (padding-top, 107, 20, 1);
-
+			width:  calc(878 / 1140 * 100%);
+			@media (max-width: 1024px) {
+				width: 100%;				
+			}
 			@media (max-width: 425px) {
-				margin: 0 -15px;
+				margin-left: -15px;
+				margin-right: -15px;
+				width: auto;
 			}
 		}
 
@@ -48,27 +62,22 @@
 		position: relative;
 
 		@media (max-width: 425.98px) {
-			max-width: 270px;
+			max-width: 240px;
 		}
 
-		@media (min-width: 1024px) {
-			margin-bottom: 180px;
+		@media (min-width: 1025px) {
+			margin-bottom: 207px;
 		}
 	}
-
-	&__info {}
-
 }
 
 .info-block {
 	display: flex;
 	flex-direction: column;
 	gap: 32px;
-
 	@media (max-width: 1024px) {
 		display: none;
 	}
-
 	&__item {
 		display: flex;
 		gap: 30px;
@@ -96,7 +105,7 @@
 	bottom: 0;
 	width: 100%;
 	opacity: 0.699999988079071;
-
+	z-index: 2;
 	@media (max-width: 767.98px) {
 		bottom: 50px;
 	}
@@ -107,7 +116,7 @@
 		border-radius: 18px;
 		background: #F9F9F9;
 
-		@media (max-width: 1024.98px) {
+		@media (max-width: 768px) {
 			padding: 9px;
 
 		}
@@ -116,20 +125,18 @@
 
 	&__text {
 		color: #242424;
-		font-size: 34px;
 		font-family: Roboto;
 		font-weight: 300;
-		line-height: 40px;
 		letter-spacing: -1.36px;
 		text-transform: uppercase;
 		opacity: 0.699999988079071;
 		position: relative;
 		display: flex;
 		gap: 10px;
-
-		@media (max-width: 1024.98px) {
-			font-size: 12px;
-			line-height: 15px;
+		@include adaptiv (font-size, 34, 12, 1);	
+		@include adaptiv (line-height, 40, 15, 1);
+		@media (max-width: 768px) {
+			
 			letter-spacing: -0.48px;
 		}
 

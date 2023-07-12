@@ -18,24 +18,34 @@ if (close) {
         disclaimerBody.style = "display: none";
     })
 }
-import Swiper   from 'swiper/bundle';
+//import Swiper   from 'swiper/bundle';
 const swiper = new Swiper('.swiper', {
-    slidesPerView: 1,
-    initialSlide: 1,
-    grabCursor: true,
-    // spaceBetween: 28,
-    // allowTouchMove: true,
+    slidesPerView: 2,
+    allowTouchMove: true,
     loop: true,
-    // slideToClickedSlide: true,
-    // autoplay: false,
+    centeredSlides: true,
+    slideToClickedSlide: true,
+    effect: "coverflow",
+    grabCursor: true,
+    autoplay: false,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
-//     effect: 'creative',
-//     creativeEffect: {
-//         limitProgress: 2,
-//   },
-   
-   
+    coverflow: {
+        rotate: 0,
+        stretch: 100,
+        depth: 300,
+        modifier: 1,
+        slideShadows: false
+    },
+    breakpoints: {
+        // when window width is <= 768px
+        768: {
+            slidesPerView: 1,
+            centeredSlides: true,
+            effect: "slide",
+           
+        }
+    }
   });
