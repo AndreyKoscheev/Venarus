@@ -45,6 +45,17 @@
        
      
     }
+    .swiper-slide {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.1s ease 0s;
+        &-next,
+        &-prev,
+        &-active {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
     @media (min-width: 767.98px) {
         .swiper-slide-prev.slide-image_small {
             transform:  translate3d(75%, 0px, -155.962px) rotateX(0deg) rotateY(2.9808deg) !important;

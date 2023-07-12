@@ -21,13 +21,16 @@ if (close) {
 //import Swiper   from 'swiper/bundle';
 const swiper = new Swiper('.swiper', {
     slidesPerView: 2,
-    allowTouchMove: true,
+   
     loop: true,
     centeredSlides: true,
     slideToClickedSlide: true,
     effect: "coverflow",
     grabCursor: true,
     autoplay: false,
+    allowTouchMove: false,
+    // allowSlidePrev: false,
+    // allowSlideNext: false,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
