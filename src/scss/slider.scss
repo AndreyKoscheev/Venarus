@@ -3,12 +3,11 @@
     justify-content: center;
     flex-direction: column;
     overflow: hidden;
-    position: relative;
-    left: -70px;
+   
     width: 100%;
     @include adaptiv (padding-top, 107, 10, 1);
+    padding-bottom: 30px;
     @media (max-width: 1024px) {
-        left: 0;
         width: 100%;
     }
    
@@ -142,11 +141,11 @@
         display: flex;
         align-items: center;
         @include adaptiv (gap, 30, 15, 1);
-        @media (min-width: 425px) {
+        @media (min-width: 768px) {
             margin-top: 74px;
             margin-bottom: 30px;
         }
-        @media (max-width: 425px) {
+        @media (max-width: 768px) {
             margin-bottom: 12px;
         }
        

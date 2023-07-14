@@ -10,7 +10,6 @@
 	&__decor {
 		position: absolute;
 		width: 100%;
-		height: auto;
 		top: 132px;
 		left: 0;
 		right: 0;
@@ -26,7 +25,14 @@
 				height: 242px;
 			}
 		}
-		
+		// svg {
+		// 	position: absolute;
+		// 	width: 100%;
+		// 	height: 100%;
+		// 	top: 0;
+		// 	left: 0;
+		// 	object-fit: cover;
+		// }
 		
 	}	
 	&__body {
@@ -40,8 +46,11 @@
 	&__col {
 		&:last-child {
 			width:  calc(878 / 1140 * 100%);
+			position: relative;
+			left: -70px;
 			@media (max-width: 1024px) {
-				width: 100%;				
+				width: 100%;
+				left: 0;				
 			}
 			@media (max-width: 425px) {
 				margin-left: -15px;

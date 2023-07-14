@@ -33,4 +33,11 @@ main {
     padding: 0 15px;
     margin: 0 auto;
     width: 100%;
-}
+} 
+@keyframes shape-animation {
+   
+  }
+
+  .svg-path {
+    animation: shape-animation 3s ease-in-out infinite;
+  }
